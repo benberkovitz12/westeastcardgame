@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MENU-VC0-001">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="MENU-SCN-001">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="MENU-VC0-001" customClass="MenuViewController" customModule="WestEastCardGameStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MENU-VIW-001">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-STK-001">
+                                <rect key="frame" x="296" y="14" width="260" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-TXT-001">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-BTN-SAVE">
+                                        <rect key="frame" x="134" y="0.0" width="126" height="44"/>
+                                        <state key="normal" title="Save"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                        <connections>
+                                            <action selector="saveNameTapped:" destination="MENU-VC0-001" eventType="touchUpInside" id="MENU-ACT-SAVE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-LBL-WELCOME">
+                                <rect key="frame" x="20" y="70" width="812" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking location..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-LBL-LOCATION">
+                                <rect key="frame" x="246" y="129" width="360" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="🌍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-LBL-WESTPLANET">
+                                <rect key="frame" x="80" y="120" width="190" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="West Side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-LBL-WESTSIDE">
+                                <rect key="frame" x="70" y="274" width="210" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="🌎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-LBL-EASTPLANET">
+                                <rect key="frame" x="582" y="120" width="190" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="East Side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-LBL-EASTSIDE">
+                                <rect key="frame" x="572" y="274" width="210" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MENU-BTN-START">
+                                <rect key="frame" x="281" y="299" width="290" height="64"/>
+                                <state key="normal" title="START"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="MENU-VC0-001" eventType="touchUpInside" id="MENU-ACT-START"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MENU-SAFE-001"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="onboardingStackView" destination="MENU-STK-001" id="MENU-OUT-STK"/>
+                        <outlet property="nameTextField" destination="MENU-TXT-001" id="MENU-OUT-TXT"/>
+                        <outlet property="saveNameButton" destination="MENU-BTN-SAVE" id="MENU-OUT-SAVE"/>
+                        <outlet property="welcomeLabel" destination="MENU-LBL-WELCOME" id="MENU-OUT-WELCOME"/>
+                        <outlet property="locationStatusLabel" destination="MENU-LBL-LOCATION" id="MENU-OUT-LOCATION"/>
+                        <outlet property="westPlanetLabel" destination="MENU-LBL-WESTPLANET" id="MENU-OUT-WESTPLANET"/>
+                        <outlet property="westSideLabel" destination="MENU-LBL-WESTSIDE" id="MENU-OUT-WESTSIDE"/>
+                        <outlet property="eastPlanetLabel" destination="MENU-LBL-EASTPLANET" id="MENU-OUT-EASTPLANET"/>
+                        <outlet property="eastSideLabel" destination="MENU-LBL-EASTSIDE" id="MENU-OUT-EASTSIDE"/>
+                        <outlet property="startButton" destination="MENU-BTN-START" id="MENU-OUT-START"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MENU-FIR-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+
+        <!--Game View Controller-->
+        <scene sceneID="GAME-SCN-001">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="GAME-VC0-001" customClass="GameViewController" customModule="WestEastCardGameStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAME-VIW-001">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Player" textAlignment="center" numberOfLines="2" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-PLAYERNAME">
+                                <rect key="frame" x="28" y="10" width="150" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-PLAYERSCORE">
+                                <rect key="frame" x="28" y="60" width="150" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="bold" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="PC" textAlignment="center" numberOfLines="2" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-PCNAME">
+                                <rect key="frame" x="674" y="10" width="150" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-PCSCORE">
+                                <rect key="frame" x="674" y="60" width="150" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="bold" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-IMG-PLAYERCARD">
+                                <rect key="frame" x="196" y="86" width="240" height="270"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-IMG-PCCARD">
+                                <rect key="frame" x="511" y="86" width="240" height="270"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="⏱" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-TIMERICON">
+                                <rect key="frame" x="381" y="136" width="90" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="5" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-COUNTDOWN">
+                                <rect key="frame" x="381" y="196" width="90" height="58"/>
+                                <fontDescription key="fontDescription" type="system" weight="bold" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Round 0/10" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAME-LBL-ROUND">
+                                <rect key="frame" x="336" y="256" width="180" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GAME-SAFE-001"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerNameLabel" destination="GAME-LBL-PLAYERNAME" id="GAME-OUT-PLAYERNAME"/>
+                        <outlet property="playerScoreLabel" destination="GAME-LBL-PLAYERSCORE" id="GAME-OUT-PLAYERSCORE"/>
+                        <outlet property="pcNameLabel" destination="GAME-LBL-PCNAME" id="GAME-OUT-PCNAME"/>
+                        <outlet property="pcScoreLabel" destination="GAME-LBL-PCSCORE" id="GAME-OUT-PCSCORE"/>
+                        <outlet property="playerCardImageView" destination="GAME-IMG-PLAYERCARD" id="GAME-OUT-PLAYERCARD"/>
+                        <outlet property="pcCardImageView" destination="GAME-IMG-PCCARD" id="GAME-OUT-PCCARD"/>
+                        <outlet property="timerIconLabel" destination="GAME-LBL-TIMERICON" id="GAME-OUT-TIMERICON"/>
+                        <outlet property="countdownLabel" destination="GAME-LBL-COUNTDOWN" id="GAME-OUT-COUNTDOWN"/>
+                        <outlet property="roundLabel" destination="GAME-LBL-ROUND" id="GAME-OUT-ROUND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAME-FIR-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="0.0"/>
+        </scene>
+
+        <!--Result View Controller-->
+        <scene sceneID="RESULT-SCN-001">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="RESULT-VC0-001" customClass="ResultViewController" customModule="WestEastCardGameStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RESULT-VIW-001">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Winner" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RESULT-LBL-WINNER">
+                                <rect key="frame" x="20" y="102" width="812" height="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="bold" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="score: 0" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RESULT-LBL-SCORE">
+                                <rect key="frame" x="20" y="200" width="812" height="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="bold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RESULT-BTN-BACK">
+                                <rect key="frame" x="321" y="298" width="210" height="62"/>
+                                <state key="normal" title="BACK TO MENU"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BACK TO MENU"/>
+                                <connections>
+                                    <action selector="backToMenuTapped:" destination="RESULT-VC0-001" eventType="touchUpInside" id="RESULT-ACT-BACK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RESULT-SAFE-001"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="winnerLabel" destination="RESULT-LBL-WINNER" id="RESULT-OUT-WINNER"/>
+                        <outlet property="scoreLabel" destination="RESULT-LBL-SCORE" id="RESULT-OUT-SCORE"/>
+                        <outlet property="backToMenuButton" destination="RESULT-BTN-BACK" id="RESULT-OUT-BACK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RESULT-FIR-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
